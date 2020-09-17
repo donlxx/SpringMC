@@ -1,0 +1,16 @@
+com/itlize/springmc/bean/ProductImage.class
+com/itlize/springmc/Repository/ProductRepository.class
+com/itlize/springmc/Controller/UserController.class
+com/itlize/springmc/configuration/AppConfig.class
+com/itlize/springmc/Controller/ProductController.class
+com/itlize/springmc/http/Response.class
+com/itlize/springmc/configuration/DbConfig.class
+com/itlize/springmc/Service/UserService.class
+com/itlize/springmc/bean/Product.class
+com/itlize/springmc/configuration/AppInitializer.class
+com/itlize/springmc/configuration/DbConfig$1.class
+com/itlize/springmc/Repository/UserRepository.class
+com/itlize/springmc/Repository/ProductImageRepository.class
+com/itlize/springmc/Service/ProductService.class
+com/itlize/springmc/Controller/AppController.class
+com/itlize/springmc/bean/User.class
