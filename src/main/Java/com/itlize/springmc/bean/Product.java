@@ -35,7 +35,7 @@ public class Product implements Serializable{
 	@Column(name="hp")
 	private int hp;
 	
-	@Column(name="heatingSurface")
+	@Column(name="heatingsurface")
 	private int heatingSurface;
 	
 	@Column(name="pressure")

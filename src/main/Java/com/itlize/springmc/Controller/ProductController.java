@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.itlize.springmc.Service.ProductService;
 import com.itlize.springmc.bean.Product;
 
-@CrossOrigin(origins = "*", allowedHeaders = "*",allowCredentials="true")
+@CrossOrigin(origins = "http://localhost:3000", allowedHeaders = "*",allowCredentials="true")
 @RestController
 public class ProductController {
 	
@@ -25,6 +25,7 @@ public class ProductController {
 	ProductService ps;
 	
     @GetMapping("/product")
+    @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity<List<Product>> getAllProducts() {
  
         List<Product> products = ps.getAllProducts();
@@ -36,12 +37,14 @@ public class ProductController {
     }
     
     @GetMapping("/product/{id}")
+    @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity<Product> getProductById(@PathVariable int id){
     	Product product = ps.getById(id);
     	return new ResponseEntity<>(product, HttpStatus.OK);
     }
  
     @PostMapping("/product")
+    @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity<Product> saveProduct(@RequestBody Product p) {
  
         ps.save(p);
@@ -49,6 +52,7 @@ public class ProductController {
     }
  
     @PutMapping("/product")
+    @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity<Product> updateProduct(@RequestBody Product p) {
  
         ps.edit(p);
@@ -56,6 +60,7 @@ public class ProductController {
     }
  
     @DeleteMapping("/product")
+    @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity<Product> deleteEmployee(@RequestBody Product p) {
  
         ps.delete(p);
